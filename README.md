@@ -1,4 +1,4 @@
-# Heading Tool
+# Heading Tool with automatic slug generation
 
 ![Version of EditorJS that the plugin is compatible with](https://badgen.net/badge/Editor.js/v2.0/blue)
 
@@ -116,13 +116,15 @@ You can select one of six levels for heading.
 | ----- | -------- | ------------------------------------------------ |
 | text  | `string` | header's text                                    |
 | level | `number` | level of header: 1 for H1, 2 for H2 ... 6 for H6 |
+| slug  | `string` | slug that is generated from text                 |
 
 ```json
 {
   "type": "header",
   "data": {
-    "text": "Why Telegram is the best messenger",
-    "level": 2
+    "text": "This is header. Да",
+    "level": 2,
+    "slug": "this-is-header-da",
   }
 }
 ```

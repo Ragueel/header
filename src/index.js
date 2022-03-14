@@ -2,6 +2,7 @@
  * Build styles
  */
 require('./index.css').toString();
+const slug = require('slug');
 
 /**
  * @typedef {object} HeaderData
@@ -230,6 +231,7 @@ class Header {
     return {
       text: toolsContent.innerHTML,
       level: this.currentLevel.number,
+      slug: slug(toolsContent.innerHTML),
     };
   }
 

@@ -231,7 +231,7 @@ class Header {
     return {
       text: toolsContent.innerHTML,
       level: this.currentLevel.number,
-      slug: slug(toolsContent.innerHTML),
+      slug: slug(toolsContent.textContent || toolsContent.innerText),
     };
   }
 
